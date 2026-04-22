@@ -18,6 +18,28 @@ docker run --rm mlops-task
 
 The container includes `data.csv` and `config.yaml`, writes `metrics.json` and `run.log`, and prints the final metrics JSON to stdout.
 
+## Publish Docker via GitHub (GHCR)
+
+A GitHub Actions workflow is included at `.github/workflows/docker-publish.yml`.
+
+It publishes images to:
+
+```text
+ghcr.io/param20h/primetrade
+```
+
+Published tags:
+- `latest` on pushes to `main`
+- `sha-<short-commit>` on pushes to `main`
+- release tag names on git tags like `v1.0.0`
+
+To pull and run the published image:
+
+```bash
+docker pull ghcr.io/param20h/primetrade:latest
+docker run --rm ghcr.io/param20h/primetrade:latest
+```
+
 ## Example Metrics
 
 ```json
