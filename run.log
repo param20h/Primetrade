@@ -1,0 +1,7 @@
+2026-04-22 21:26:12,378 INFO Job start timestamp: 2026-04-22T15:56:12Z
+2026-04-22 21:26:12,405 INFO Config loaded + validated: seed=42 window=5 version=v1
+2026-04-22 21:26:12,422 INFO Rows loaded: 10000
+2026-04-22 21:26:12,422 INFO Processing step: rolling mean
+2026-04-22 21:26:12,437 INFO Processing step: signal generation
+2026-04-22 21:26:12,437 INFO Metrics summary: {"latency_ms": 58, "metric": "signal_rate", "rows_processed": 10000, "seed": 42, "status": "success", "value": 0.4989, "version": "v1"}
+2026-04-22 21:26:12,437 INFO Job end + status: success
